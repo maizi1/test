@@ -21,7 +21,7 @@
 | createtime |      |      |
 | open       |      |      |
 
-## 获取app列表
+## 获取app列表及用户数据来源
 
 #### **GET**  /a/channelList/{uid}
 
@@ -31,6 +31,7 @@
 | message | string：’succeed‘ | 提示消息     |
 | total   | number            | 数据总条数   |
 | data    | array             |              |
+| source  | '数据源'[]        |              |
 
 | data        | 类型 | 备注 |
 | ----------- | ---- | ---- |
@@ -44,6 +45,7 @@
 | switch      |      |      |
 | reset       |      |      |
 | createtime  |      |      |
+| ps          |      |      |
 
 ## 更新用户 Open 状态
 #### **PATCH**  /a/userOpen/{id}
@@ -68,6 +70,7 @@
 | switch     | number: 1 or 0   | 可选 |
 | buffer     | number: 1-100    | 可选 |
 | proportion | number : 1 - 100 | 可选 |
+| ps         | string           | 可选 |
 
 | 响应    | 类型   | 备注                |
 | ------- | ------ | ------------------- |
@@ -88,6 +91,7 @@
 | buffer      | number | 必选 |
 | switch      | number | 必选 |
 | reset       | number | 必选 |
+| ps          | string | 可选 |
 
 | 响应    | 响应   | 备注     |
 | ------- | ------ | -------- |
@@ -108,4 +112,3 @@
 | ------- | ------ | -------- |
 | code    | number |          |
 | message | string | 提示消息 |
-
