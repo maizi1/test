@@ -61,7 +61,7 @@ results
 | ------- | ----------- | ---- |
 | type    | string      |      |
 | channel | string      |      |
-| pv      | [...number] |      |
-| uv      | [...number] |      |
-| income  | [...number] |      |
+| pv      | [...number] | 中间如有缺失数据补零     |
+| uv      | [...number] | 中间如有缺失数据补零     |
+| income  | [...number] | 中间如有缺失数据补零     |
 
